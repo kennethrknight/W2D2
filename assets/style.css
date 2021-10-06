@@ -1,0 +1,179 @@
+/* text-shadow: 2px 2px rgba(0, 0, 0, 0.411); */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list li {
+    flex-direction: column;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    padding: 40px;
+
+    
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover {
+animation-name: hover-anim;
+animation-duration: 1s;
+}
+
+@keyframes hover-anim{
+    0% {background-color:#da3121};
+    100%{background-color:#da302173};
+}
+
+
+.nav-list {
+    display:flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.logo {
+    background-color: #da3121;
+    justify-content: center;
+    padding: 40px;
+    Font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    color: white;
+    
+
+}
+
+.search-bar {
+    display: flex;
+    width: 240px;
+    flex-direction: row;
+    height: 40px;
+    align-items: stretch;
+}
+
+.search-input {
+        background-color: white;
+        flex-grow: 3;
+}
+
+.search-button {
+    color: #da3121;
+    background-color:#da3121;
+    background-image: url("https://openclipart.org/image/800px/svg_to_png/213239/Search-icon.png");
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 0.6;
+    height:auto;
+    border-style: none;
+    
+    
+}
+
+.right-nav-buttons {
+    color: white;
+    flex-wrap: wrap;
+    Font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    justify-content: flex-end;
+    padding-left: 30px;
+    text-align: right;
+    padding-right: 20px;
+    
+}
+
+
+.s-cart:after {
+    content:url(http://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg);
+    transform: scale(0.04);
+    height: 5px;
+    width: 5px;
+    filter: invert(1);
+    display: flex;
+    margin-top: -5px;
+
+    
+}
+
+.s-cart {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    align-content:flex-end;
+    padding-left: 90px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40pt;
+}
+
+.rick-list {
+    padding-left: 10px;
+    color: rgb(58, 58, 58);
+    font-size: 32;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.164);
+}
+
+.rick-astley {
+    padding-top: 10px;
+    display: block;
+    margin-left:  auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#explore-h1
+{
+  margin: 20px 0px 0px 10px;  
+}
+
+.product-list li {
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, 0.212);
+    color: #da3121;
+    font-size:40px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: oblique;
+
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  #content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+  }
+  
+  #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;            /* Footer height */
+  }
